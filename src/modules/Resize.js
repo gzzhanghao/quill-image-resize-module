@@ -55,6 +55,7 @@ export class Resize extends BaseModule {
     };
 
     handleMousedown = (evt) => {
+        evt.preventDefault();
         // note which box
         this.dragBox = evt.target;
         // note starting mousedown position
